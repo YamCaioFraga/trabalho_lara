@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Dado</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #e3f2fd;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .dice {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: bold;
+            background-color: #ffffff;
+            border-radius: 10px;
+            border: 2px solid #333;
+            cursor: pointer;
+            transition: transform 0.5s ease-in-out;
+            user-select: none;
+        }
+        .action {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Jogo do Dado - Dado & Ação.</div>
+        <div class="dice" onclick="rollDice()">🎲</div>
+        <div class="action" id="actionText">Clique no dado para jogar!</div>
+    </div>
+    
+    <script>
+        function rollDice() {
+            const dice = document.querySelector(".dice");
+            const actionText = document.getElementById("actionText");
+            
+            // Animação do dado
+            dice.style.transform = "rotate(" + (Math.random() * 360) + "deg)";
+            
+            // Gera um número de 1 a 6
+            const number = Math.floor(Math.random() * 20) + 1;
+            
+            // Lista de ações
+            const actions = [
+                "1. Estudo de um novo idioma.",
+                "2. leitura de livros ou arquivos da sua área de trabalho.",
+                "3. Ouvir podcasts em forma de lazer ou de estudo para relaxar durante a viagem ou obter mais conhecimento.",
+                "4. Prática de mindfulness, prática de meditação com o objetivo de relaxar o corpo e a mente.",
+                "5. Prática de exercicíos mentais,jogos de raciocínio lógico com objetivo de exercitar o raciocínio rápido e inteligente.",
+                "6. Desenvolvimento de um diário de bordo, com o objetivo de se conhecer melhor, anotar vivências e sentimentos do dia",
+                "7. Ouvir música é uma forma de relaxamento e diversão durante o trajeto da viagem.",
+                "8. Fazer uma lista de tarefas da semana para organizar o seu itinerário semanal.",
+                "9. Aprander sobre a cultura local através de documentários ou artigos.",
+                "10. Escreva contos ou poesias, práticas que ajudam na criatividade.",  
+                "11. Desenhe o que vê ao seu redor, ajuda com o passar do tempo de forma criativa e divertida.",
+                "12. Converse com pessoas ao seu redor, ajuda a combater a timidez e a socializar com pessoas diferentes.",
+                "13. Faça uma lista de coisas pelas quais você é grato.",
+                "14. Exercicíos de respiração, ajuda a relaxar e tranquilizar o corpo e a mente.",
+                "15. Faça alongamentos discretos para aliviar a tensão.",
+                "16. Networking profissional, conecte-se com colegas via Linkedin.",
+                "17. atualização profissional, leia sobre tendências na sua área de trabalho.",
+                "18. Participe de semiários on-line sobre sua área de trabalho se sua conexão permitir.",
+                "19. Planejamento financeiro, revise suas finanças e faça um orçamento.",
+                "20. Investimento, pesquise sobre investimentos e estratégias financeiras"
+            ];
+            
+            // Atualiza o dado e a ação
+            dice.textContent = number;
+            actionText.textContent = actions[number - 1];
+        }
+    </script>
+</body>
+</html>
