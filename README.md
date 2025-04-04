@@ -38,4 +38,4 @@ Um projeto simples, interativo e divertido criado com HTML, CSS e JavaScript. O 
  -E muito mais (total de 20 ações!)
 
 🤝 Contribuindo
-Contribuições são muito bem-vindas! Se você tem ideias de melhorias ou novas ações para adicionar, por favor entre em contato pelo instragram ():
+Contribuições são muito bem-vindas! Se você tem ideias de melhorias ou novas ações para adicionar, por favor entre em contato pelo instragram (https://www.instagram.com/yam_cfc/):
