@@ -2,11 +2,6 @@
 
 Um projeto simples, interativo e divertido criado com HTML, CSS e JavaScript. O **Jogo do Dado** sorteia um número de 1 a 20, cada um representando uma ação positiva ou atividade produtiva para fazer durante o dia — perfeito para momentos de tédio, viagens ou pausas criativas.
 
-## 🖼️ Preview
-
-![preview](./screenshot.png)  
-*Exemplo de como o jogo aparece no navegador.*
-
 ## 🚀 Funcionalidades
 
 - Clique no dado para "jogar".
@@ -18,7 +13,7 @@ Um projeto simples, interativo e divertido criado com HTML, CSS e JavaScript. O 
 ## 🛠 Tecnologias Utilizadas
 
 - HTML5
-- CSS3 (com animações e responsividade)
+- CSS3 (com animações)
 - JavaScript (DOM, Math.random, manipulação de eventos)
 
 ## 📦 Como Usar
